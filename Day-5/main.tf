@@ -9,7 +9,7 @@ variable "cidr" {
 
 resource "aws_key_pair" "example" {
   key_name   = "terraform-demo-pradeep"  # Replace with your desired key name
- public_key = file("/Users/pradeepreddygunna/Desktop/Key_pair/my_key") 
+ public_key = file("/Users/pradeepreddygunna/.ssh/id_rsa.pub") 
  # Replace with the path to your public key file
 }
 
@@ -105,5 +105,4 @@ resource "aws_instance" "server" {
     ]
   }
 }
-
 
